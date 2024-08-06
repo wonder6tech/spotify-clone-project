@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar-track{
+    background: #000;
+    margin-block: 0.5rem;
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #9c9b9b;
+    overflow-x: hidden;
+    /* color: #121212; */
+}
+::-webkit-slider-thumb:hover{
+    background: #252424;
+}
+body{
+    background: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+.grid-container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    /* background-color: #121212; */
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px 400px auto;
+    gap: 5px;
+}
+.grid-container .grid-item-one{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    height: 160px;
+    padding: 15px 20px;
+    background-color: #212121;
+    font-size: 15px;
+}
+.grid-container .grid-item-one a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 5px;
+    font-size: larger;
+}
+.grid-container .grid-item-one a:nth-child(3){
+    color: #ccc;
+}
+.grid-container .grid-item-two{
+    background-color: #212121;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px;
+}
+.grid-container .grid-item-two i{
+    float: left;
+    margin: 20px 10px;
+    color: #121212;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #fff;
+}
+.grid-container .grid-item-two button{
+    float: right;
+    margin: 10px 10px;
+}
+.grid-container .grid-item-two .signup-btn{
+    border: none;
+    outline: none;
+    color:#ccc;
+    background: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+}
+.grid-container .grid-item-two .signup-btn:hover{
+    cursor: pointer;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+.grid-container .grid-item-two .login-btn{
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+.grid-container .grid-item-two .login-btn:hover{
+     cursor: pointer;
+    background: #ccc;
+    transition: all .5s ease-in-out;
+}
+/* =======================grid-item three========================= */
+.grid-container .grid-item-three{
+    background-color: #212121;
+    border-radius: 10px;
+    margin: 75px 10px;
+    padding: 30px;
+    height: 400px;
+}
+.grid-container .grid-item-three .line{
+    border-bottom: 1px solid #ccc;
+    /* padding: 10px; */
+}
+.grid-container .grid-item-three .heading p{
+    float: left;
+    /* margin: 0px 5px; */
+}
+.grid-container .grid-item-three .heading .fa-plus{
+    float: right;
+}
+.grid-container .grid-item-three .container{
+    background-color: #363636;
+    height: 70px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+.grid-container .grid-item-three .container .overflow-text{
+    /* background: #232323; */
+    /* overflow: hidden; */
+    border-radius: 10px;
+    /* margin: 20px 20px; */
+    padding: 10px; 
+}
+.grid-container .grid-item-three .container p:nth-child(1){
+    font-weight: 700;
+}
+.grid-container .grid-item-three .container p:nth-child(2){
+    font-weight: lighter;
+    font-size: 14px;
+    padding: 10px;
+}
+.grid-container .grid-item-three .container button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    background: #fff;
+    font-weight: 600;
+}
+.grid-container .grid-item-three .links{
+    display: inline-block;
+}
+.grid-container .grid-item-three .links li{
+    list-style: none;
+}
+.grid-container .grid-item-three .links a{
+    color: #ccc;
+    font-size: 10px;
+    text-decoration: none;
+}
+.grid-container .grid-item-three .links a:hover{
+    color: #ffff;
+    text-decoration: underline;
+}
+.grid-container .grid-item-three .btn button{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background: #fff;
+    font-weight: 600;
+}
+/* =================== */
+.grid-container .grid-item-four{
+    /* border-radius: 100px; */
+    /* border-radius: 50px; */
+    /* margin: 20px 10px 40px 10px; */
+    grid-row: span 2;
+    margin: 0px 0px 0px 0px;
+    /* padding: 10px 10px; */
+    
+}
+.grid-container .popular-artists, .popular-albums,
+.popular-radio, .spotify-playlists, .featured-charts{
+    background: linear-gradient(#212121,#000);
+}
+.grid-container .grid-item-four .title a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 30px;
+}
+.grid-container .grid-item-four .title a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.grid-container .grid-item-four .title .start{
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+.grid-container .grid-item-four .title .end{
+    float: right;
+    color: #ccc;
+}
+.grid-container .grid-item-four .card-container{
+    display: grid;
+    gap: 5px;
+    margin: 50px 0px 10px 0px;
+    grid-template-columns: repeat(5, 180px);
+}
+.grid-container .grid-item-four .card-container .card{
+    position: relative;
+    overflow: hidden;
+}
+.grid-container .grid-item-four .card-container .card .play-btn{
+    width: 100%;
+    height: 0;
+    background: transparent;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.2s;
+}
+.grid-container .grid-item-four .card-container .card .play-btn img{
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
+    margin: 70px 0px 0 70px;
+}
+
+.grid-container .grid-item-four .card-container .card:hover img{
+    transform: scale(1.1);
+
+}
+.grid-container .grid-item-four .card-container .card:hover .play-btn{
+    height: 100%;
+
+}
+
+.grid-container .grid-item-four .card-container .card .image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid-container .grid-item-four .popular-artists .card-container .card .image-box img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+}
+/* =====popular radio======= */
+.grid-container .grid-item-four .card-container .card{
+    width: 180px;
+    height: 270px;
+    background: transparent;
+    margin: 0 0 0 15px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.grid-container .grid-item-four .card-container .card p{
+    padding: 5px 0;
+}
+.grid-container .grid-item-four .card p:nth-child(1){
+    color: #fff;
+    font-size:20px;
+    font-weight: 700;
+}
+.grid-container .grid-item-four .card p:nth-child(2){
+    color: #cccc;
+    font-size: small;
+    font-weight: 400;
+}
+.grid-container .grid-item-four .card-container .card:hover{
+    background: #232323;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.grid-container .grid-item-four .card-container .card .image-box img{
+    border-radius:10px;
+    width: 150px;
+    margin: 15px 10px 0 10px;
+}
+.footer .foothead{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 170px);
+    border-bottom: 1px solid #858585;
+    padding: 30px 20px;
+    
+}
+.footend{
+    padding: 50px;
+}
+.foothead p{
+    font-size: 18px;
+    color: #fff;
+}
+.foothead li{
+    color: #ccc;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0; 
+}
+.foothead li:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.footer .social-links{
+    display: inline-flex;
+}
+.footer .social-links .icon {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.footend p{
+    font-weight: 100;
+    color: #ccc;
+}
